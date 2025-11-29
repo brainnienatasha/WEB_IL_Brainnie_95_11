@@ -1,0 +1,465 @@
+body{
+    margin: 0;
+    background-color: rgb(255, 253, 233);
+}
+.header{
+    padding: 20px;
+    text-align: center;
+}
+@font-face {
+    font-family: aa;
+    src: url(Garden\ Flower.ttf);
+}
+@font-face {
+    font-family: bb;
+    src: url(Hug\ Me\ Tight\ -\ TTF.ttf);
+}
+.navbar {
+    background-color: rgb(201, 233, 244);
+    width: 100%;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    font-family: bb;
+    font-size: 20px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+.navbar ul li {
+    position: relative;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: 500;    
+    display: block;
+    transition: 0.3s ease;
+    border-radius: 6px;
+}
+.navbar ul li a:hover {
+    background-color: lightblue;
+    color:midnightblue;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+.dropdown-content a {
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;      
+    display: block;
+    color: #333;
+    background-color: white;
+    transition: 0.2s ease;
+}
+.dropdown-content a:hover {
+    background-color: moccasin;
+    color: midnightblue;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+p.judul{
+    font-family: aa;
+    font-size: 30px;
+    text-align: center;
+    color: lemonchiffon;
+    background-color: rgb(147, 205, 224);
+}
+p.judul:hover{
+    text-shadow: 2px 3px 5px cadetblue;
+        transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+
+/* pengetian & penjelasan */
+div.pengertian-penjelasan{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+div.container-pengertian{
+    background-color: lemonchiffon;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-left: 30px;
+    min-width: 300px;
+    max-width: 800px;
+    height: 300px;
+}
+div.container-pengertian:hover{
+    box-shadow: 0 0 5px 5px burlywood;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+div.container-penjelasan{
+    background-color: rgb(222, 247, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-left: 30px;
+    min-width: 300px;
+    max-width: 800px;
+    height: 300px;
+}
+div.container-penjelasan:hover{
+    box-shadow: 0 0 5px 5px lightblue;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+
+p.text{
+    font-family: bb;
+    color: cadetblue;
+    font-size: 30px;
+    text-align: center;
+}
+p.isi{
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    font-size: 15px;
+}
+
+/* tujuan */
+.tujuan {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1200px;
+}
+.grid-tujuan {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;
+}
+.content {
+    background-color: lemonchiffon;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.content:hover {
+    background-color: rgb(255, 255, 218);
+}
+.content p.isi {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.content:hover p.isi {
+    opacity: 1;
+    max-height: 500px;
+    margin-top: 10px;
+}
+
+/* sasaran */
+div.sasaran{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: auto;
+}
+div.container1{
+    background-color: lemonchiffon;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-left: 30px;
+    width: 300px;
+    height: 200px;
+}
+div.container1:hover{
+    box-shadow: 0 0 5px 5px burlywood;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+div.container2{
+    background-color: rgb(222, 247, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-left: 30px;
+    width: 300px;
+    height: 200px;
+}
+div.container2:hover{
+    box-shadow: 0 0 5px 5px lightblue;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+div.container3{
+    background-color: lemonchiffon;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-left: 30px;
+    width: 300px;
+    height: 200px;
+}
+div.container3:hover{
+    box-shadow: 0 0 5px 5px burlywood;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+
+/* dampak */
+div.dampak{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: auto;
+}
+div.container4{
+    background-color: rgb(222, 247, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-left: 30px;
+    width: 300px;
+    height: 200px;
+}
+div.container4:hover{
+    box-shadow: 0 0 5px 5px lightblue;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+div.container5{
+    background-color: lemonchiffon;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-left: 30px;
+    width: 300px;
+    height: 200px;
+}
+div.container5:hover{
+    box-shadow: 0 0 5px 5px burlywood;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+div.container6{
+    background-color: rgb(222, 247, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-left: 30px;
+    width: 300px;
+    height: 200px;
+}
+div.container6:hover{
+    box-shadow: 0 0 5px 5px lightblue;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+
+/* kerja sama */
+div.bar{
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+img.bilateral{
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+img.bilateral:hover{
+    content:url(flag.jpg);
+            box-shadow: 0 0 5px 5px burlywood;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+img.asean{
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+img.asean:hover{
+content:url(ASEAN\ logo\ comp.jpg);
+            box-shadow: 0 0 5px 5px burlywood;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+img.pbb{
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+img.pbb:hover{
+content:url(un.avif);
+            box-shadow: 0 0 5px 5px burlywood;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+div.container-kerjasama{
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: lemonchiffon;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+div.column{
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    background-color: rgb(218, 246, 255);
+    border-left: 5px solid lightblue;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+div.column:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* pengalaman pribadi */
+div.container-pengalaman{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+div.sidebar-pengalaman{
+    width: 25%;
+    background-color: lemonchiffon;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+img.sembako{
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+img.sembako:hover{
+    box-shadow: 0 0 5px 5px burlywood;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+img.miskin{
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+img.miskin:hover{
+    box-shadow: 0 0 5px 5px burlywood;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+div.isi-content{
+    background-color: lemonchiffon;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-left: 30px;
+    min-width: 300px;
+    max-width: 800px;
+    height: 420px;
+}
+
+/* kaitan */
+.kaitan {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1200px;
+}
+.grid-kaitan {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px;
+}
+.content-isi {
+    background-color: rgb(222, 247, 255);
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.content-isi:hover {
+    background-color: lightblue;
+}
+.content-isi p.isi {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.content-isi:hover p.isi {
+    opacity: 1;
+    max-height: 500px;
+    margin-top: 10px;
+}
+div.isi-pancasila{
+    background-color: lemonchiffon;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    flex: 1;
+    max-width: 600px;
+    height: 200px;
+}
+div.container-pancasila{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+}
+div.isi-pancasila:hover{
+    box-shadow: 0 0 5px 5px burlywood;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+
+/* footer */
+.footer{
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    gap: 20px;
+}

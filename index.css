@@ -1,0 +1,211 @@
+body{
+    margin: 0;
+    background-color: rgb(255, 253, 233);
+}
+.header{
+    padding: 20px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: bb;
+    src: url(Hug\ Me\ Tight\ -\ TTF.ttf);
+}
+.navbar {
+    background-color: rgb(201, 233, 244);
+    width: 100%;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    font-family: bb;
+    font-size: 20px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+.navbar ul li {
+    position: relative;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: 500;    
+    display: block;
+    transition: 0.3s ease;
+    border-radius: 6px;
+}
+.navbar ul li a:hover {
+    background-color: lightblue;
+    color:midnightblue;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+.dropdown-content a {
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;      
+    display: block;
+    color: #333;
+    background-color: white;
+    transition: 0.2s ease;
+}
+.dropdown-content a:hover {
+    background-color: moccasin;
+    color: midnightblue;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+div.container{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+div.sidebar{
+    width: 25%;
+    background-color: lemonchiffon;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+img.bilateral{
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+img.bilateral:hover{
+    content:url(flag.jpg);
+            box-shadow: 0 0 5px 5px burlywood;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+img.asean{
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+img.asean:hover{
+content:url(ASEAN\ logo\ comp.jpg);
+            box-shadow: 0 0 5px 5px burlywood;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+img.pbb{
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+img.pbb:hover{
+content:url(un.avif);
+            box-shadow: 0 0 5px 5px burlywood;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+div.column{
+    background-color: lemonchiffon;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-left: 30px;
+    min-width: 300px;
+    max-width: 800px;
+    height: 680px;
+}
+h3{
+    font-family: bb;
+    color: cadetblue;
+}
+p.salam{
+    font-family: "Poppins", sans-serif;
+}
+p{
+    text-align: justify;
+}
+
+.sdgs{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 15px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.sdgs-tujuan{
+    font-family: aa;
+    font-size: 30px;
+    text-align: center;
+    color: lemonchiffon;
+    background-color: rgb(147, 205, 224);
+}
+.sdgs-tujuan:hover{
+    text-shadow: 2px 3px 5px cadetblue;
+        transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+@font-face {
+    font-family: aa;
+    src: url(Garden\ Flower.ttf);
+}
+.sdgs-item{
+    position: relative;
+    border-radius: 10px;
+}
+.sdgs-item img{
+    width: 100%;
+    transition: 0.3s;
+}
+.sdgs-item:hover img{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    opacity: 0;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    transition: 0.3s;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 8px;
+}
+.sdgs-item:hover .text{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    gap: 20px;
+}
